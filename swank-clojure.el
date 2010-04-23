@@ -249,6 +249,7 @@ will be used over paths too.)"
 
 (defun swank-clojure-reset-implementation ()
   "Redefines the clojure entry in `slime-lisp-implementations'."
+  (require 'assoc)
   (aput 'slime-lisp-implementations 'clojure
         (list (swank-clojure-cmd) :init 'swank-clojure-init)))
 
