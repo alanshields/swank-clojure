@@ -318,6 +318,7 @@ The `path' variable is bound to the project root when these functions run.")
   (interactive (list
                 (read-directory-name
                  "Project root: "
+                 nil
                  (if (functionp 'locate-dominating-file) ; Emacs 23 only
                      (locate-dominating-file default-directory "src")
                    default-directory))))
