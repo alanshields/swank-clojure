@@ -258,7 +258,6 @@ will be used over paths too.)"
   ;; Unfortunately we need to construct our Clojure-launching command
   ;; at slime-launch time to reflect changes in the classpath. Slime
   ;; has no mechanism to support this, so we must resort to advice.
-  (require 'assoc)
   (swank-clojure-reset-implementation))
 
 ;; Change the repl to be more clojure friendly
